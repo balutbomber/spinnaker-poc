@@ -2,7 +2,7 @@ version: 0.2
 
 env:
   variables:
-    VERSION: 0.0.10
+    VERSION: 0.0.12
     STAGE: dev
 
 phases:
@@ -14,3 +14,7 @@ phases:
       - chmod +x init.buildspec.sh
       - ls -al
       - bash init.buildspec.sh
+
+artifacts:
+  files:
+    - '**/*'
