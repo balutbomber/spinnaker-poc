@@ -7,7 +7,7 @@ module "spinnaker" {
   stage = "dev"
   github_configuration = {
     Owner       = "balutbomber"
-    Repo        = "terraform-spinnaker-module"
+    Repo        = "spinnaker-poc"
     Branch      = "master"
     OAuthToken = var.github_oauth_token
   }
