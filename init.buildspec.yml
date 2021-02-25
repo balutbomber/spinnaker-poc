@@ -1,0 +1,16 @@
+version: 0.2
+
+env:
+  variables:
+    VERSION: 0.0.10
+    STAGE: dev
+
+phases:
+  build:
+    commands:
+      - echo Build started on `date`
+      - cd $STAGE
+      - wget https://raw.githubusercontent.com/balutbomber/terraform-spinnaker-module/$VERSION/scripts/init.buildspec.sh
+      - chmod +x init.buildspec.sh
+      - ls -al
+      - bash init.buildspec.sh
